@@ -24,7 +24,7 @@ server.on("request", (req, res) => {
 
     // Solution 3
     const readable = fs.createReadStream('./how-nodes-work/text-file.txt');
-    
+    readable.pipe(res);
     // readableSource.pipe(WritableDest)
 })
 
